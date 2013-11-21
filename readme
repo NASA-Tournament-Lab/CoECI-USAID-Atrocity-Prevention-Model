@@ -1,0 +1,40 @@
+CoECI-USAID-Atrocity-Prevention-Model
+=====================================
+
+Code from the United States Agency for International Development (USAID) and Humanity United (HU) challenge for Atrocity Prevention Modeling in collaboration with NASA’s Center of Excellence for Collaboration (CoECI).
+
+This package contains 4 out of best 5 solutions submitted into the "Tech Challenge for Atrocity Prevention" competition.
+
+You can find the competition task problem statement here: http://community.topcoder.com/longcontest/?module=ViewProblemStatement&rd=15761&pm=12634.
+It is necessary to read the problem statement in order to understand what the solutions are doing.
+
+In order to use the package, compile main.cpp file as follows:
+
+g++ --std=c++0x -W -Wall -Wno-sign-compare -O2 -s -pipe -mmmx -msse -msse2 -msse3 -Wl,--stack,4194304 -o main main.cpp
+
+The obtained executable is to be run with the following 6 parameters:
+
+main <input folder> <output folder> <solution> <first training day> <first testing day> <last testing day>
+
+<input folder> must contain all data files. The archive with all data can be downloaded at <PUT URL HERE>.
+
+<output folder> is the folder where the results must be saved. For each day D of the testing period, the file named
+res_D.txt will be created in the folder. It will contain 3671 numbers -- the confidences that an atrocity
+will occur within next 30 days in each of the 3671 regions.
+
+<solution> is the number of solution to be used. It can be 1, 2, 3 or 5 for 1st, 2nd, 3rd or 5th placed solution, respectively.
+The places were awarded based on a well-defined objective metric, but still each solution has its stronger and weaker sides.
+In particular, it's known that 1st and 2nd place solutions complement each other pretty well.
+
+<first training day>, <first testing day> and <last testing day> define the training and testing periods. You can read the problem statement for more details.
+
+Three settings that correspond to example, provisional and system test of the actual competition are as follows.
+
+Example test: <first training day> = 11284, <first testing day> = 15302, <last testing day> = 15636.
+Provisional test: <first training day> = 11284, <first testing day> = 15667, <last testing day> = 16367.
+System test: <first training day> = 11284, <first testing day> = 16398, <last testing day> = 17644.
+
+For example, if you want to execute 2nd place solution on provisional test, take input data from "data" folder and save results to "out" folder,
+here is the command to do so:
+
+main data out 2 11284 16398 17644
