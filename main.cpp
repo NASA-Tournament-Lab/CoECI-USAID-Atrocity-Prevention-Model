@@ -69,7 +69,6 @@ vector<string> read_data(string file_name) {
     return res;
 }
 
-const int NUM_REGIONS = 3671;
 const int MIN_DAY = 5440;
 const int MIN_REC_DAY = 11284;
 const int MAX_REC_DAY = 17644;
@@ -115,7 +114,7 @@ int main(int argc, char *argv[]) {
         error("The value of <first testing day> parameter must be greater than or equal to the value of <first training day> parameter.");
     }
 
-    if (end_test < end_test) {
+    if (end_test < start_test) {
         error("The value of <last testing day> parameter must be greater than or equal to the value of <first testing day> parameter.");
     }
 
@@ -125,7 +124,6 @@ int main(int argc, char *argv[]) {
 
     if (end_test > MAX_DAY) {
         error("The value of <last testing day> parameter must be " + inttostr(MAX_DAY) + " or below.");
-        return 0;
     }
 
     string solution = argv[3];
