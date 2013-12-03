@@ -1,7 +1,7 @@
 CoECI-USAID-Atrocity-Prevention-Model
 =====================================
 
-Code from the United States Agency for International Development (USAID) and Humanity United (HU) challenge for Atrocity Prevention Modeling in collaboration with NASA’s Center of Excellence for Collaboration (CoECI).
+Code from the United States Agency for International Development (USAID) and Humanity United (HU) challenge for Atrocity Prevention Modeling in collaboration with NASAï¿½s Center of Excellence for Collaboration (CoECI).
 
 This package contains the top 5 solutions submitted for the "Tech Challenge for Atrocity Prevention" competition.
 
@@ -37,3 +37,5 @@ For example, if you want to execute 2nd place solution on provisional test, take
 main data out 2 11284 16398 17644
 
 Finally, please note that 4th placed solution is implemented in Java (while all other solutions are implemented in C++), so it needs to be executed in a different, but a very similar way: java -jar place4.jar <input folder> <output folder> <first training day> <first testing day> <last testing day>
+
+The data is currently located in a Google Drive folder but will be uploaded to the appropriate Github repository for this project. At this time, please access the data using this link: https://docs.google.com/file/d/0B5LAtOowzIeoNjNMZ1VZTzZDNTg/edit?pli=1.
